@@ -1,3 +1,9 @@
+h1,h2,h3,p,button{
+    font-family: "Montserrat";
+}
+body{
+    position: relative;
+}
 main{
     display: flex;
     flex-direction: column;
@@ -5,6 +11,49 @@ main{
     padding: 0 10rem;
 }
 
+/**Whatsapp globo**/
+#wpp-section{
+    position: absolute;
+    display: flex;
+    right: 0px;
+}
+#wpp-float{
+    justify-self: flex-end;
+    height: fit-content;
+    width: max-content;
+    background-color: #25d366;
+    padding: 0.2rem 1rem 0.2rem 1rem;
+    border-radius: 50px 0 0 50px;
+    position: fixed;
+    top: 75vh;
+    right: 0px;
+}
+#wpp-float a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+#wpp-float a img{
+    height: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+/**Primera seccion**/
 .titulo-g{
     color: var(--grey-color);
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+#first-title-div p{
+    padding: 0 15vw;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
 }
