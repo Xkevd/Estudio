@@ -89,6 +89,10 @@ main{
 }
 
 /* Second div */
+#conozcaServicios{
+    font-size: 3rem;
+}
+
 .title3Margin{
     margin: 3rem auto;
 }
