@@ -6,6 +6,8 @@ h1,h2,h3,p,button{
 }
 body{
     position: relative;
+    background-color: #fbfcf8;
+    margin: 0;
 }
 main{
     display: flex;
@@ -83,7 +85,7 @@ main{
     align-self: center;
     border-color: transparent;
     background-color: #d4cccb;
-    padding: 0.3rem 2rem;
+    padding: 0.5rem 2rem;
     font-size: 1rem;
     font-weight: 600;
 }
@@ -134,7 +136,7 @@ main{
 
 /* Third div */
 #third-div-inicio{
-    background-color: var(--grey-color);
+    background-color: #6b686dec;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -144,11 +146,13 @@ main{
 }
 #third-div-inicio img{
     width: 30vw;
+    margin: 0;
+    margin-bottom: 3rem;
 }
 #third-div-inicio h3{
     font-size: 3rem;
-    margin: 0;
-    margin-bottom: 1rem;
+    margin: 0 auto;
+    margin-bottom: 3rem;
     color: #fdfdfd;
 }
 #third-div-inicio p{
