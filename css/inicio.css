@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@0;1&display=swap');
+
 h1,h2,h3,p,button{
     font-family: "Montserrat";
 }
@@ -14,6 +16,23 @@ main{
     flex-direction: column;
     align-items: center;
     padding: 0 10rem;
+}
+.fondo-claro{
+    background-color: #5c3d704d;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 3rem 10rem;
+}
+.titulo{
+    font-size: 3.5rem;
+    text-align: left;
+    font-weight: 650;
+    color: var(--grey-color);
+    margin-left: 0;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    align-self: flex-start;
 }
 
 /* Whatsapp globo */
@@ -80,6 +99,7 @@ main{
     font-size: 1.3rem;
     font-weight: 600;
     margin: 1.5rem 0;
+    margin-bottom: 2rem;
 }
 .contact-button{
     align-self: center;
@@ -88,6 +108,31 @@ main{
     padding: 0.5rem 2rem;
     font-size: 1rem;
     font-weight: 600;
+    transition: all 0.6s;
+    cursor: pointer;
+    height: 3rem;
+}
+.contact-button:hover{
+    border: 1px solid black;
+    border-radius: 2rem;
+    background-color: transparent;
+}
+.contact-button-dark{
+    align-self: center;
+    border-color: transparent;
+    background-color: #d4cccb;
+    padding: 0.5rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.6s;
+    cursor: pointer;
+    height: 3rem;
+}
+.contact-button-dark:hover{
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 2rem;
 }
 
 /* Second div */
@@ -132,6 +177,7 @@ main{
 #second-div-inicio section p{
     margin: 0;
     font-weight: 500;
+    font-family: "PT Serif";
 }
 
 /* Third div */
@@ -147,7 +193,7 @@ main{
 #third-div-inicio img{
     width: 30vw;
     margin: 0;
-    margin-bottom: 3rem;
+    margin-bottom: 0;
 }
 #third-div-inicio h3{
     font-size: 3rem;
@@ -160,4 +206,5 @@ main{
     font-weight: 500;
     color: #fdfdfd;
     text-align: center;
+    font-family: "PT Serif";
 }

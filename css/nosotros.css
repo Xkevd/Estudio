@@ -1,0 +1,62 @@
+/*Informacion*/
+#informacion{
+    padding-bottom: 4rem;
+}
+#informacion p{
+    text-indent: 2rem;
+    margin-bottom: 0;
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-family: "PT Serif";
+}
+
+
+/*Imagen*/
+#nosotros-imagen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+#nosotros-imagen img{
+    aspect-ratio: 4/1;
+    object-fit: cover;
+    width: 70vw;
+    filter: grayscale(0.3);
+}
+#nosotros-imagen section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: min-content;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+#nosotros-imagen section hr{
+    margin: auto 3rem;
+    height: 2rem;
+    border: 1px solid var(--grey-color);
+}
+#nosotros-imagen h2{
+    font-size: 2rem;
+    text-align: center;
+    color: black;
+}
+#nosotros-imagen section h3{
+    font-size: 2rem;
+    color: var(--grey-color);
+    margin: 0;
+}
+#nosotros-imagen button{
+    background-color: black;
+    color: white;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+#nosotros-imagen button:hover{
+    color: black;
+    background-color: transparent;
+}

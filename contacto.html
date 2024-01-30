@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
+    <title>Servicios</title>
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/inicio.css">
     <link rel="stylesheet" href="css/footer.css">
-    <!-- <script type="text/javascript" src="js/inicio.js"></script> -->
+    <link rel="stylesheet" href="css/contacto.css">
 </head>
 <body>
     <header>
@@ -36,45 +36,25 @@
         </div>
     </header>
     <main>
-            <section id="wpp-float">
-                <a href="">
-                    <img src="images/Social/wpp-logo-black.png" alt="">
-                    <p>Contactanos</p>
-                </a>
+        <h1 class="titulo">CONTACTO</h1>
+       <div id="contacto">
+        <section id="form-division">
+            <form action="">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre">
+                <label for="telefono">Teléfono</label>
+                <input type="number" id="telefono">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="ejemplo@mail.com">
+                <label for="mensaje">Mensaje</label>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+                <input type="submit" id="submit">
+            </form>
+            <section>
+
             </section>
-            
-            <div id="first-title-div">
-                <hr>
-                <h2 class="titulo-g">ASESORAMIENTO INTEGRAL</h2>
-                <p>Más de 30 años al servicio de nuestros clientes, basados en nuestros principios de seriedad, honestidad y responsabilidad profesional, brindando asesoramiento integral a empresas.</p>
-                <button class="contact-button">CONTACTAR</button>
-                <hr>
-            </div>
-            <h3 class="title3Margin grey" id="conozcaServicios">Conozca nuestros servicios</h3>
-            <div id="second-div-inicio">
-                
-                <section>
-                    <img src="images/OfficeImages/desk.jpg" alt="">
-                    <h3>Impositiva</h3>
-                    <p>Declaraciones juradas de IVA, IRAE, y patrimonio, pagos ante DGI, declaraciones de IRPF e IASS, etc.</p>
-                </section>
-                <section>
-                    <img src="images/OfficeImages/man-2.jpg" alt="">
-                    <h3>Laboral</h3>
-                    <p>Liquidación de sueldos y jornales, pagos de aportes ante BPS, convenios de pago y certificados</p>
-                </section>
-                <section>
-                    <img src="images/OfficeImages/calculator.jpg" alt="">
-                    <h3>Contable</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </section>
-            </div>
-            <div id="third-div-inicio">
-                <h3>¿POR QUÉ ELEGIRNOS?</h3>
-                <img src="images/OfficeImages/man-1.jpg" alt="Imagen de oficina">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <button class="contact-button-dark">CONTACTAR</button>
-            </div>
+        </section>
+       </div>
     </main>
     <footer>
         <div id="footerlogo">
