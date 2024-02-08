@@ -9,9 +9,13 @@
     <link rel="stylesheet" href="css/inicio.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/contacto.css">
+    <script type="text/javascript" src="js/inicio.js"></script>
 </head>
 <body>
     <header>
+        
+    </header>
+    <main>
         <div id="header">
             <a href="index.html" id="logolink">
                 <div id="logoandtitle">
@@ -20,11 +24,11 @@
                     <h1>ESTUDIO CONTABLE</h1>
                 </div>
             </a>
-            <div id="header-social">
+            <!-- <div id="header-social">
                 <a href=""><img src="images/Social/email-logo-color.png" alt=""></a>
                 <a href=""><img src="images/Social/fb-logo-color.png" alt=""></a>
                 <a href=""><img src="images/Social/ig-logo-color.png" alt=""></a>
-            </div>
+            </div> -->
             <nav id="nav-bar">
                 <ul>
                     <li><a href="index.html">INICIO</a></li>
@@ -34,9 +38,7 @@
                 </ul>
             </nav>
         </div>
-    </header>
-    <main>
-        <h1 class="titulo">CONTACTO</h1>
+        <h1 id="contactoh1" class="titulo">CONTACTO</h1>
        <div id="contacto">
         <section id="form-division">
             <form action="">
@@ -50,8 +52,24 @@
                 <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
                 <input type="submit" id="submit">
             </form>
-            <section>
-
+            <section id="secondColumn">
+                <iframe
+                    id="mapBox"
+                    width="600"
+                    height="450"
+                    style="border:0"
+                    loading="lazy"
+                    allowfullscreen
+                    referrerpolicy="no-referrer-when-downgrade"
+                    src="https://www.google.com/maps/embed/v1/place?key=
+                        &q=Space+Needle,Seattle+WA">
+                </iframe>
+                <section id="contactInfo">
+                    <img src="" alt="">
+                    <p>Phone 1<br>Phone 2</p>
+                    <hr>
+                    <p>Int1<br>Int2<br>Int3</p>
+                </section>
             </section>
         </section>
        </div>

@@ -16,9 +16,15 @@ a{
     padding: 2rem;
     background-image: url("../images/header-img-big.png");
     background-size: cover;
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: min-content 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 9rem;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    transition: all 0.4s;
+    z-index: 99;
 }
 #logolink{
     text-decoration: none;
@@ -27,11 +33,10 @@ a{
 }
 
 #logoandtitle{
-    grid-row: 1/3;
     display: grid;
     grid-template-columns: min-content auto;
     grid-template-rows: min-content min-content auto;
-    transition: 0.5s;
+    margin-left: 2rem;
 }
 #logoandtitle h2{
     grid-column: 2/3;
@@ -42,6 +47,7 @@ a{
     font-weight: 700;
     color: #5c3d70;
     width: max-content;
+    transition: all 0.4s;
 }
 #logoandtitle h1{
     grid-column: 2/3;
@@ -49,10 +55,12 @@ a{
     margin: 0;
     font-size: 0.9rem;
     font-weight: 500;
+    transition: all 0.4s;
 }
 #logoandtitle img{
     grid-row: 1/4;
     height: 8rem;
+    transition: all 0.4s;
 }
 
 /* social */
@@ -68,8 +76,13 @@ a{
 
 /* navegation */
 #nav-bar{
-    grid-column: 2/3;
-    grid-row: 2/3;
+    width: 50vw;
+    align-self: flex-end;
+}
+#nav-bar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 nav ul li{
     list-style: none;
@@ -81,6 +94,7 @@ nav ul li{
     font-size: 1rem;
     position: relative;
 }
+
 #nav-bar ul li a:after{
     content: "";
     background-color: var(--violet-color);
@@ -100,3 +114,6 @@ nav ul li{
     display: flex;
     justify-content: space-around;
 }
+
+/*Sticky Header*/
+

@@ -4,12 +4,12 @@ footer{
     align-items: center;
     background-image: url("../images/header-img-big.png");
     background-size: cover;
-    padding: 1rem 2rem;
+    padding: 0 2rem;
 }
 
 /* Logo */
 #footerlogo{
-    margin: 1rem;
+    margin: 0;
     display: grid;
     grid-template-columns: min-content auto;
     grid-template-rows: min-content min-content;
@@ -50,7 +50,7 @@ footer{
 
 /* Social images */
 #footer-social{
-    margin: 1rem;
+    margin: 0.5rem;
 }
 #footer-social a img{
     height: 2rem;

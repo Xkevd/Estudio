@@ -4,7 +4,12 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-
+#contactoh1{
+    margin-top: 15rem;
+}
+#form-division{
+    display: flex;
+}
 
 /*Form*/
 form{
@@ -19,4 +24,15 @@ form label{
 #submit{
     align-self: flex-end;
     margin-top: 1rem;
+}
+
+/*Map*/
+#mapBox{
+    height: 10rem;
+    width: 20rem;
+}
+
+#contactInfo{
+    display: flex;
+    justify-content: center;
 }

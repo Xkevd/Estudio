@@ -11,6 +11,9 @@ main{
     align-self: flex-start;
     margin-bottom: 2rem;
 }
+#serviciosh1{
+    margin-top: 16rem;
+}
 #servicios-principal section{
     display: grid;
     grid-template-columns: min-content auto;
