@@ -53,6 +53,7 @@ main{
     right: 0px;
     margin-right: 1rem;
     transition: all 0.2s;
+    z-index: 99;
 }
 #wpp-float:hover{
     transform: scale(1.2);
@@ -208,4 +209,79 @@ main{
     color: #fdfdfd;
     text-align: center;
     font-family: "PT Serif";
+}
+
+@media (max-width: 999px){
+    main{
+        padding: 0;
+    }
+    #wpp-float a p{
+        display: none;
+    }
+    #wpp-float a{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #wpp-float{
+        padding: 0;
+        width: min-content;
+    }
+    #wpp-float a img{
+        margin: 0.3rem;
+    }
+
+    .titulo-g{
+        font-size: 2rem;
+    }
+    #first-title-div p{
+        padding: 0;
+        font-size: 1rem;
+    }
+
+    #conozcaServicios{
+        font-size: 2rem;
+        margin: auto;
+        text-align: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    #second-div-inicio{
+        display: flex;
+        flex-direction: column;    
+        align-items: center;
+        width: 100%;
+    }
+    #second-div-inicio section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 1.5rem;
+        width: fit-content;
+        padding: 0 1rem;
+
+    }
+    #second-div-inicio section img{
+        width: 100%;
+        aspect-ratio: 3/1;
+        margin-bottom: 0.5rem;
+    }
+
+
+    #third-div-inicio{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 2rem 0;
+    }
+    #third-div-inicio img{
+        width: 80vw;
+        aspect-ratio: 3/1;
+    }
+    #third-div-inicio p{
+        padding: 0 1rem;
+    }
 }

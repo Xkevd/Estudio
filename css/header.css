@@ -79,6 +79,9 @@ a{
     width: 50vw;
     align-self: flex-end;
 }
+#nav-bar span{
+    display: none;
+}
 #nav-bar ul{
     display: flex;
     flex-direction: row;
@@ -115,5 +118,42 @@ nav ul li{
     justify-content: space-around;
 }
 
-/*Sticky Header*/
+@media (max-width: 999px){
+    #header{
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        padding: 1rem 0;
+    }
+    #logoandtitle img{
+        height: 4rem;
+        margin-right: 0.5rem;
+    }
+    #logoandtitle h2{
+        font-size: 1rem;
+    }
+    #logoandtitle h1{
+        font-size: 0.8rem;
+    }
+
+    #nav-bar{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        margin-right: 1rem;
+    }
+    #nav-bar ul .hidden{
+        display: none;
+    }
+    #nav-bar span{
+        display: inline-block;
+    }
+    #nav-bar ul{
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+}
 
