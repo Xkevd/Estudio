@@ -31,7 +31,9 @@ a{
     color: black;
     width: min-content;
 }
-
+#menu-button{
+    display: none;
+}
 #logoandtitle{
     display: grid;
     grid-template-columns: min-content auto;
@@ -133,6 +135,7 @@ nav ul li{
     }
     #menu-button{
         text-decoration: none;
+        display: inline-block;
     }
     #nav-bar{
         display: flex;
