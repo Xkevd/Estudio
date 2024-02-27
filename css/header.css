@@ -131,7 +131,9 @@ nav ul li{
     #logoandtitle h1{
         font-size: 0.8rem;
     }
-
+    #menu-button{
+        text-decoration: none;
+    }
     #nav-bar{
         display: flex;
         flex-direction: column;
