@@ -234,6 +234,10 @@ main{
     .titulo-g{
         font-size: 2rem;
     }
+
+    #first-title-div{
+        margin-top: 10rem;
+    }
     #first-title-div p{
         padding: 0;
         font-size: 1rem;

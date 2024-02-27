@@ -57,3 +57,40 @@ hr{
 button{
     margin-bottom: 3rem;
 }
+
+@media (max-width:999px){
+    #serviciosh1{
+        margin-left: 1rem;
+        margin-top: 10rem;
+    }
+    #servicios-principal{
+        margin: 0 1rem;
+    }
+    #servicios-principal section h2{
+        font-size: 2rem;
+    }
+    #servicios-principal section img{
+        width: 2rem;
+    }
+    #servicios-principal section p{
+        font-size: 1rem;
+    }
+    #servicios-principal section{
+        margin-bottom: 1rem;
+    }
+
+    .fondo-claro{
+        padding: 0;
+    }
+    .servicios-secundario{
+        padding: 1rem;
+    }
+    .servicios-secundario section h3{
+        font-size: 1rem;
+    }
+    .servicios-secundario section p{
+    font-size: 0.8rem;
+    margin: 0 0.5rem;
+    }
+
+}

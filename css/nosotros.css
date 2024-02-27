@@ -61,3 +61,32 @@
     color: black;
     background-color: transparent;
 }
+
+@media (max-width: 999px){
+    .titulo{
+        font-size: 2rem;
+    }
+    #informacion{
+        margin-top: 10rem;
+        padding: 0 1rem;
+        padding-bottom: 4rem;
+    }
+    #informacion p{
+        font-size: 1rem;
+    }
+
+    .fondo-claro{
+        padding: 0;
+    }
+
+    #nosotros-imagen h2{
+        font-size: 1.5rem;
+    }
+    #nosotros-imagen section h3{
+        font-size: 1rem;
+    }
+    #nosotros-imagen section hr{
+        height: 1rem;
+        margin: 0 1rem;
+    }
+}

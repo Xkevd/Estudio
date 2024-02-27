@@ -37,20 +37,19 @@ celphoneView()
 
 
 // Menu open/close
+const menuButton = document.querySelector("#menu-button");
+const menu = document.querySelector("#menu");
 
-function changeClass(element){
-    let elementAtribute = element.className;
+function changeClass(){
+    let elementAtribute = menu.className;
+    console.log('clicked')
     if (elementAtribute == "hidden"){
-        navBar.className = "show";
-        console.log(navBar.className)
+        menu.className = "show";
+        console.log(menu.className)
     }else{
-        navBar.className = "hidden"; 
-        console.log(navBar.className)
+        menu.className = "hidden"; 
+        console.log(menu.className)
     }
 }
 
-const navBar = document.querySelector("#nav-bar ul");
-const navClick = document.querySelector("#nav-bar span");
-
-
-navClick.addEventListener("click", changeClass(navBar));
+menuButton.addEventListener('click', changeClass);
