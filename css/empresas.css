@@ -1,15 +1,15 @@
-#consultoriah1{
+#empresash1{
     margin-top: 16rem;
     font-size: 2.5rem;
 }
-#listaContable{
+#listaEmpresas{
     margin-top: 0;
     padding: 2rem 5rem;
     padding-top: 0;
     padding-left: 0;
     list-style: none;
 }
-#listaContable li{
+#listaEmpresas li{
 font-size: 1.2rem;
 margin-bottom: 1rem;
 font-family: "Montserrat";
