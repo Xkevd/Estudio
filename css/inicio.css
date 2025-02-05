@@ -45,7 +45,8 @@ main{
     justify-self: flex-end;
     height: fit-content;
     width: max-content;
-    background-color: #25d366;
+    /* background-color: #25d366; */
+    background-color: #4CAF50;
     padding: 0.2rem 1rem 0.2rem 1rem;
     border-radius: 50px 50px 50px 50px;
     position: fixed;
@@ -204,11 +205,12 @@ main{
     color: #fdfdfd;
 }
 #third-div-inicio p{
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 500;
     color: #fdfdfd;
     text-align: center;
     font-family: "PT Serif";
+    padding: 0 4rem;
 }
 
 @media (max-width: 999px){
