@@ -32,7 +32,7 @@ main{
 #servicios-principal section img{
     grid-column: 1/2;
     grid-row: 1/2;
-    width: 3rem;
+    width: 2rem;
     justify-self: center;
     align-self: center;
     opacity: 0.5;
@@ -40,7 +40,7 @@ main{
 #servicios-principal section h2{
     grid-column: 2/3;
     grid-row: 1/2;
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin: 0;
     margin-left: 1rem;
     color: var(--grey-color);
@@ -70,13 +70,26 @@ hr{
 button{
     margin-bottom: 3rem;
 }
-
+#botones-servicio{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+#botones-servicio a{
+    margin: 2rem 4rem;
+}
 
 /*Sub paginas*/
 .servicio-detalle{
     margin-left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 @media (max-width:999px){
+    .no-mostrar-display-celular{
+        display: none;
+    }
     #serviciosh1{
         margin-left: 1rem;
         margin-top: 10rem;
