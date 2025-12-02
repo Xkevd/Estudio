@@ -260,10 +260,11 @@ main{
     height: 2rem;
     border: 1px solid var(--grey-color);
 }
-#nosotros-imagen h2{
+#nosotros-imagen h2 a{
     font-size: 2rem;
     text-align: center;
     color: var(--grey-color);
+    text-decoration: none;
 }
 #nosotros-imagen section h3{
     font-size: 2rem;
