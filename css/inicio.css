@@ -129,10 +129,11 @@ main{
 .contact-button-dark{
     align-self: center;
     border-color: transparent;
-    background-color: #d4cccb;
+    background-color: black;
+    color: white;
     padding: 0.5rem 2rem;
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 500;
     transition: all 0.6s;
     cursor: pointer;
     height: 2rem;
@@ -140,11 +141,12 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid transparent;
 }
 .contact-button-dark:hover{
     background-color: transparent;
-    color: white;
-    border: 1px solid white;
+    color: black;
+    border: 1px solid black;
     border-radius: 2rem;
 }
 
@@ -165,7 +167,7 @@ main{
 }
 #second-div-inicio section{
     width: min-content;
-    margin: 0 5vw;
+    margin: 0 2vw;
 }
 #second-div-inicio section:hover{
     cursor: pointer;
@@ -179,7 +181,7 @@ main{
     aspect-ratio: 5/4;
     object-fit: cover;
     filter: grayscale(50%);
-    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.178);
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.055);
 }
 #second-div-inicio section a img:hover{
     filter: grayscale(0%);
@@ -194,7 +196,8 @@ main{
 #second-div-inicio section a p{
     margin: 0;
     font-weight: 500;
-    font-family: "PT Serif";
+    font-size: 0.8rem;
+    font-family: "Montserrat";
 }
 
 /* Third div */
