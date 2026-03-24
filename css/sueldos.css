@@ -1,6 +1,14 @@
 #sueldosh1{
-    margin-top: 16rem;
+    margin-top: -3rem;
     font-size: 2.5rem;
+}
+
+@media (max-width:999px) {
+    #sueldosh1 {
+        margin-left: 1rem;
+        margin-top: 10rem;
+        font-size: 2rem;
+    }
 }
 #listaSueldos{
     margin-top: 0;

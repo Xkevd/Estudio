@@ -1,16 +1,20 @@
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+    -webkit-appearance: none;
+    margin: 0;
 }
-#contactoh1{
-    margin-top: 15rem;
-}#contacto{
+
+#contactoh1 {
+    margin-top: -1rem;
+}
+
+#contacto {
     width: 100%;
     margin-bottom: 4rem;
 }
-#form-division{
+
+#form-division {
     display: flex;
     justify-content: center;
     gap: 4rem;
@@ -20,7 +24,7 @@ input::-webkit-inner-spin-button {
 }
 
 /*Form*/
-form p{
+form p {
     width: 100%;
     font-size: 1rem;
     font-weight: 500;
@@ -28,7 +32,8 @@ form p{
     margin-bottom: 2rem;
     color: var(--grey-color);
 }
-form{
+
+form {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -41,7 +46,9 @@ form{
     border-radius: 12px;
     box-sizing: border-box;
 }
-form input, form textarea {
+
+form input,
+form textarea {
     width: 100%;
     box-sizing: border-box;
     border: 1px solid #ddd;
@@ -52,24 +59,28 @@ form input, form textarea {
     transition: all 0.3s ease;
     background-color: #fafafa;
 }
-form input:focus, form textarea:focus {
+
+form input:focus,
+form textarea:focus {
     outline: none;
     border-color: #5c3d70;
     background-color: white;
     box-shadow: 0 0 0 3px rgba(92, 61, 112, 0.1);
 }
-form label{
+
+form label {
     margin-top: 1.2rem;
     margin-bottom: 0.4rem;
     font-weight: 600;
     font-size: 0.9rem;
     color: #333;
 }
-#submit{
+
+#submit {
     align-self: flex-start;
     margin-top: 2rem;
     width: 100%;
-    background-color: #5c3d70;
+    background-color: #7e6492;
     color: white;
     border: none;
     font-weight: 600;
@@ -78,13 +89,14 @@ form label{
     cursor: pointer;
     transition: background-color 0.3s;
 }
+
 #submit:hover {
-    background-color: #432a52;
+    background-color: #5c3d70;
 }
 
 
 /*Second Column*/
-#secondColumn{
+#secondColumn {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -92,7 +104,8 @@ form label{
     width: 45%;
     min-width: 350px;
 }
-#secondColumn div{
+
+#secondColumn div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -105,7 +118,7 @@ form label{
 }
 
 /*Map*/
-#mapBox{
+#mapBox {
     height: 18rem;
     width: 100%;
     border-radius: 12px;
@@ -115,7 +128,7 @@ form label{
 }
 
 
-#contactInfo{
+#contactInfo {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -123,42 +136,50 @@ form label{
     gap: 0.5rem;
     height: min-content;
 }
-#contactInfo hr{
+
+#contactInfo hr {
     height: 3rem;
     border: var(--grey-color) 1px solid;
 }
-#contactInfo p{
+
+#contactInfo p {
     margin: 0;
 }
 
 /*Phone*/
-#phoneInfo{
+#phoneInfo {
     text-align: right;
     font-size: 1.5rem;
 }
-#internos{
+
+#internos {
     font-size: 1rem;
 }
-#celulares{
+
+#celulares {
     font-size: 1.5rem;
     margin-bottom: 0;
 }
-em{
+
+em {
     font-weight: 600;
     font-style: normal;
 }
 
-@media (max-width: 999px){
-    #contacto{
+@media (max-width: 999px) {
+    #contacto {
         margin-bottom: 2rem;
     }
-    #contactoh1{
-        margin-top: 10rem;
+
+    #contactoh1 {
         font-size: 2rem;
         text-align: center;
         width: 100%;
+        margin-top: 10rem;
+        margin-bottom: 2rem;
     }
-    #form-division{
+
+    #form-division {
         flex-direction: column;
         align-items: center;
         width: 90vw;
@@ -166,28 +187,36 @@ em{
         margin: auto;
         gap: 3rem;
     }
-    form, #secondColumn {
+
+    form,
+    #secondColumn {
         width: 100%;
         min-width: 100%;
     }
-    #mapBox{
+
+    #mapBox {
         width: 100%;
         margin-top: 2rem;
         margin-bottom: 2rem;
     }
-    #phoneInfo{
+
+    #phoneInfo {
         font-size: 1rem;
     }
-    #phoneIcon{
+
+    #phoneIcon {
         display: none;
     }
-    #internos{
-        font-size: 0.5rem;
+
+    #internos {
+        font-size: 0.85rem;
     }
-    #celulares{
+
+    #celulares {
         font-size: 1rem;
     }
-    #contactInfo hr{
+
+    #contactInfo hr {
         height: 1.5rem;
     }
 
