@@ -12,40 +12,74 @@ input::-webkit-inner-spin-button {
 }
 #form-division{
     display: flex;
-   justify-content: space-between;
-   width: 100%;
+    justify-content: center;
+    gap: 4rem;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 /*Form*/
 form p{
-    width: 15rem;
+    width: 100%;
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    color: var(--grey-color);
 }
 form{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: fit-content;
-    min-width: 20vw;
-    background-color: #6b686d86;
-    padding: 1rem 3rem 1rem 2rem;
-    font-family: "Montserrat";
-    border-radius: 3px;
+    width: 45%;
+    min-width: 350px;
+    background-color: white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    padding: 2.5rem;
+    font-family: "Montserrat", sans-serif;
+    border-radius: 12px;
+    box-sizing: border-box;
 }
-form input{
+form input, form textarea {
     width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 0.8rem;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    background-color: #fafafa;
+}
+form input:focus, form textarea:focus {
+    outline: none;
+    border-color: #5c3d70;
+    background-color: white;
+    box-shadow: 0 0 0 3px rgba(92, 61, 112, 0.1);
 }
 form label{
-    margin-top: 1rem
-}
-form textarea{
-    width: 100%;
+    margin-top: 1.2rem;
+    margin-bottom: 0.4rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #333;
 }
 #submit{
-    align-self: flex-end;
-    margin-top: 1rem;
-    width: fit-content;
+    align-self: flex-start;
+    margin-top: 2rem;
+    width: 100%;
+    background-color: #5c3d70;
+    color: white;
+    border: none;
+    font-weight: 600;
+    padding: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+#submit:hover {
+    background-color: #432a52;
 }
 
 
@@ -55,21 +89,29 @@ form textarea{
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    width: 45%;
+    min-width: 350px;
 }
 #secondColumn div{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #6b686d3a;
-    padding: 2rem 0rem;
+    background-color: white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    padding: 2.5rem 2rem;
     width: 100%;
+    box-sizing: border-box;
 }
 
 /*Map*/
 #mapBox{
-    height: 15rem;
-    width: 40vw;
-    margin-bottom: 3rem;
+    height: 18rem;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    margin-bottom: 2rem;
+    border: none;
 }
 
 
@@ -117,11 +159,16 @@ em{
         width: 100%;
     }
     #form-division{
-        display: flex;
         flex-direction: column;
         align-items: center;
-        width: 80vw;
+        width: 90vw;
+        max-width: 500px;
         margin: auto;
+        gap: 3rem;
+    }
+    form, #secondColumn {
+        width: 100%;
+        min-width: 100%;
     }
     #mapBox{
         width: 100%;

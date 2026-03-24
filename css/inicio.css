@@ -1,30 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@0;1&display=swap');
 
-h1,h2,h3,p,button{
+h1,
+h2,
+h3,
+p,
+button {
     font-family: "Montserrat";
 }
-.grey{
+
+.grey {
     color: var(--grey-color)
 }
-body{
+
+body {
     position: relative;
     background-color: #fbfcf8;
     margin: 0;
 }
-main{
+
+main {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0 10rem;
 }
-.fondo-claro{
+
+.fondo-claro {
     background-color: #5c3d704d;
     display: flex;
     flex-direction: column;
     width: 100%;
     padding: 3rem 10rem;
 }
-.titulo{
+
+.titulo {
     font-size: 3.5rem;
     text-align: left;
     font-weight: 650;
@@ -36,12 +45,13 @@ main{
 }
 
 /* Whatsapp globo */
-#wpp-section{
+#wpp-section {
     position: absolute;
     display: flex;
     right: 0px;
 }
-#wpp-float{
+
+#wpp-float {
     justify-self: flex-end;
     height: fit-content;
     width: max-content;
@@ -56,12 +66,14 @@ main{
     transition: all 0.2s;
     z-index: 99;
 }
-#wpp-float:hover{
-    transform: scale(1.2);
-    box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.178);
+
+#wpp-float:hover {
+    transform: scale(1.05) translateY(-3px);
+    box-shadow: 0px 4px 20px 1px rgba(0, 0, 0, 0.2);
     cursor: pointer;
 }
-#wpp-float a{
+
+#wpp-float a {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -70,13 +82,14 @@ main{
     font-size: 0.7rem;
     font-weight: 600;
 }
-#wpp-float a img{
+
+#wpp-float a img {
     height: 1.5rem;
     margin-right: 0.5rem;
 }
 
 /* Primera seccion */
-.titulo-g{
+.titulo-g {
     color: var(--grey-color);
     text-align: center;
     font-size: 3rem;
@@ -85,18 +98,18 @@ main{
     margin: 0;
     margin-top: 3rem;
 }
-#first-title-div{
-    margin-top: 13rem;
+
+#first-title-div {
+    padding-top: 13rem;
+    padding-bottom: 5rem;
+    margin: 0 -10rem 0 -10rem;
+    background-image: url("../images/header-img-big.png");
+    background-size: cover;
     display: flex;
     flex-direction: column;
 }
-#first-title-div hr{
-    width: 9vw;
-    height: 1px;
-    background: var(--violet-color);
-    margin: 3rem auto 0rem auto;
-}
-#first-title-div p{
+
+#first-title-div p {
     padding: 0 10vw;
     text-align: center;
     font-size: 1.3rem;
@@ -104,7 +117,8 @@ main{
     margin: 1.5rem 0;
     margin-bottom: 2rem;
 }
-.contact-button{
+
+.contact-button {
     align-self: center;
     border-color: transparent;
     background-color: #d4cccb;
@@ -121,12 +135,14 @@ main{
     align-items: center;
     border: 1px solid transparent;
 }
-.contact-button:hover{
+
+.contact-button:hover {
     border: 1px solid black;
     border-radius: 2rem;
     background-color: transparent;
 }
-.contact-button-dark{
+
+.contact-button-dark {
     align-self: center;
     border-color: transparent;
     background-color: black;
@@ -143,7 +159,8 @@ main{
     align-items: center;
     border: 1px solid transparent;
 }
-.contact-button-dark:hover{
+
+.contact-button-dark:hover {
     background-color: transparent;
     color: black;
     border: 1px solid black;
@@ -151,57 +168,75 @@ main{
 }
 
 /* Second div */
-#conozcaServicios{
+#conozcaServicios {
     font-size: 3rem;
 }
 
-.title3Margin{
+.title3Margin {
     margin: 3rem auto;
 }
 
-#second-div-inicio{
+#second-div-inicio {
     display: flex;
     max-width: 100vw;
     align-items: start;
     justify-content: center;
 }
-#second-div-inicio section{
-    width: min-content;
+
+#second-div-inicio section.service-card {
+    width: 24vw;
     margin: 0 2vw;
+    background-color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+    transition: all 0.3s ease;
 }
-#second-div-inicio section:hover{
+
+#second-div-inicio section.service-card:hover {
     cursor: pointer;
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
 }
-#second-div-inicio section a{
+
+#second-div-inicio section a {
     text-decoration: none;
     color: black;
+    display: block;
 }
-#second-div-inicio section a img{
-    width: 20vw;
+
+#second-div-inicio section a img {
+    width: 100%;
     aspect-ratio: 5/4;
     object-fit: cover;
-    filter: grayscale(50%);
-    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.055);
+    transition: transform 0.3s ease;
 }
-#second-div-inicio section a img:hover{
-    filter: grayscale(0%);
-    box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.178);
-    transition: all 0.3s;
+
+#second-div-inicio section.service-card:hover a img {
+    transform: scale(1.03);
 }
-#second-div-inicio section a h3{
-    font-size: 2rem;
-    margin: 0;
+
+.card-content {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+#second-div-inicio section a h3 {
+    font-size: 1.8rem;
+    margin: 0 0 0.5rem 0;
     color: var(--grey-color);
 }
-#second-div-inicio section a p{
+
+#second-div-inicio section a p {
     margin: 0;
     font-weight: 500;
-    font-size: 0.8rem;
-    font-family: "Montserrat";
+    font-size: 0.95rem;
+    color: #555;
 }
 
 /* Third div */
-#third-div-inicio{
+#third-div-inicio {
     background-color: #6b686dec;
     display: flex;
     flex-direction: column;
@@ -210,18 +245,21 @@ main{
     margin-top: 3rem;
     padding: 3rem 10rem;
 }
-#third-div-inicio img{
+
+#third-div-inicio img {
     width: 30vw;
     margin: 0;
     margin-bottom: 0;
 }
-#third-div-inicio h3{
+
+#third-div-inicio h3 {
     font-size: 3rem;
     margin: 0 auto;
     margin-bottom: 3rem;
     color: #fdfdfd;
 }
-#third-div-inicio p{
+
+#third-div-inicio p {
     font-size: 1.5rem;
     font-weight: 500;
     color: #fdfdfd;
@@ -231,7 +269,7 @@ main{
 }
 
 /*Imagen nosotros*/
-#nosotros-imagen{
+#nosotros-imagen {
     margin-top: 3rem;
     display: flex;
     flex-direction: column;
@@ -240,14 +278,16 @@ main{
     padding-top: 4rem;
     padding-bottom: 4rem;
 }
-#nosotros-imagen img{
+
+#nosotros-imagen img {
     aspect-ratio: 4/1;
     object-fit: cover;
     width: 70vw;
     filter: grayscale(0.3);
     margin-bottom: 0;
 }
-#nosotros-imagen section{
+
+#nosotros-imagen section {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -255,100 +295,114 @@ main{
     margin: auto;
     margin-bottom: 2rem;
 }
-#nosotros-imagen section hr{
+
+#nosotros-imagen section hr {
     margin: auto 2rem;
     height: 2rem;
     border: 1px solid var(--grey-color);
 }
-#nosotros-imagen h2 a{
+
+#nosotros-imagen h2 a {
     font-size: 2rem;
     text-align: center;
     color: var(--grey-color);
     text-decoration: none;
 }
-#nosotros-imagen section h3{
+
+#nosotros-imagen section h3 {
     font-size: 2rem;
     text-align: center;
     color: var(--grey-color);
     margin: 0;
 }
-#nosotros-imagen button{
+
+#nosotros-imagen button {
     background-color: black;
     color: white;
     padding-left: 3rem;
     padding-right: 3rem;
 }
-#nosotros-imagen button:hover{
+
+#nosotros-imagen button:hover {
     color: black;
     background-color: transparent;
 }
 
-@media (max-width: 999px){
-    main{
+@media (max-width: 999px) {
+    main {
         padding: 0;
     }
-    #wpp-float a p{
+
+    #wpp-float a p {
         display: none;
     }
-    #wpp-float a{
+
+    #wpp-float a {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    #wpp-float{
+
+    #wpp-float {
         padding: 0;
         width: min-content;
     }
-    #wpp-float a img{
+
+    #wpp-float a img {
         margin: 0.3rem;
     }
 
-    .titulo-g{
+    .titulo-g {
         font-size: 2rem;
     }
 
-    #first-title-div{
+    #first-title-div {
         margin-top: 10rem;
     }
-    #first-title-div p{
+
+    #first-title-div p {
         padding: 0;
         font-size: 1rem;
     }
 
-    #conozcaServicios{
+    #conozcaServicios {
         font-size: 2rem;
         margin: auto;
         text-align: center;
         margin-top: 2rem;
         margin-bottom: 2rem;
     }
-    #second-div-inicio{
-        display: flex;
-        flex-direction: column;    
-        align-items: center;
-        width: 100%;
-    }
-    #second-div-inicio section{
+
+    #second-div-inicio {
         display: flex;
         flex-direction: column;
         align-items: center;
-        text-align: center;
-        margin-bottom: 1.5rem;
-        width: fit-content;
-        padding: 0 1rem;
-
+        width: 100%;
     }
-    #second-div-inicio section a{
+
+    #second-div-inicio section.service-card {
+        width: 90%;
+        margin: 0 auto 2rem auto;
+        padding: 0;
+        text-align: left;
+    }
+
+    #second-div-inicio section a {
         text-decoration: none;
     }
-    #second-div-inicio section a img{
+
+    #second-div-inicio section a img {
         width: 100%;
-        aspect-ratio: 3/1;
-        margin-bottom: 0.5rem;
+        aspect-ratio: 16/9;
+        margin-bottom: 0;
+    }
+
+    .card-content {
+        padding: 1.5rem;
     }
 
 
-    #third-div-inicio{
+    #third-div-inicio {
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -356,22 +410,26 @@ main{
         text-align: center;
         padding: 2rem 0;
     }
-    #third-div-inicio img{
+
+    #third-div-inicio img {
         width: 80vw;
         aspect-ratio: 3/1;
     }
-    #third-div-inicio p{
+
+    #third-div-inicio p {
         padding: 0 1rem;
     }
 
 
-    #nosotros-imagen h2{
+    #nosotros-imagen h2 {
         font-size: 1.5rem;
     }
-    #nosotros-imagen section h3{
+
+    #nosotros-imagen section h3 {
         font-size: 1rem;
     }
-    #nosotros-imagen section hr{
+
+    #nosotros-imagen section hr {
         height: 1rem;
         margin: 0 1rem;
     }

@@ -1,20 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;800&display=swap');
 
 /* Variables */
-:root{
-    --violet-color: #5c3d70 ;
+:root {
+    --violet-color: #5c3d70;
     --grey-color: #6b686d;
 }
 
-h1, h2{
+h1,
+h2 {
     font-family: "Montserrat";
 }
-a{
+
+a {
     font-family: "Montserrat";
 }
-#header{
+
+#header {
     padding: 2rem;
-    background-image: url("../images/header-img-big.png");
     background-size: cover;
     display: flex;
     flex-direction: row;
@@ -26,21 +28,25 @@ a{
     transition: all 0.4s;
     z-index: 99;
 }
-#logolink{
+
+#logolink {
     text-decoration: none;
     color: black;
     width: min-content;
 }
-#menu-button{
+
+#menu-button {
     display: none;
 }
-#logoandtitle{
+
+#logoandtitle {
     display: grid;
     grid-template-columns: min-content auto;
     grid-template-rows: min-content min-content auto;
     margin-left: 2rem;
 }
-#logoandtitle h2{
+
+#logoandtitle h2 {
     grid-column: 2/3;
     grid-row: 1/2;
     margin-top: 0.3rem;
@@ -51,7 +57,8 @@ a{
     width: max-content;
     transition: all 0.4s;
 }
-#logoandtitle h1{
+
+#logoandtitle h1 {
     grid-column: 2/3;
     grid-row: 2/3;
     margin: 0;
@@ -59,40 +66,46 @@ a{
     font-weight: 500;
     transition: all 0.4s;
 }
-#logoandtitle img{
+
+#logoandtitle img {
     grid-row: 1/4;
     height: 8rem;
     transition: all 0.4s;
 }
 
 /* social */
-#header-social{
+#header-social {
     display: flex;
     flex-direction: row;
     justify-self: end;
 }
-#header-social a img{
+
+#header-social a img {
     height: 2rem;
     margin: 0 0.2rem 0 0.2rem;
 }
 
 /* navegation */
-#nav-bar{
+#nav-bar {
     width: 50vw;
     align-self: flex-end;
 }
-#nav-bar span{
+
+#nav-bar span {
     display: none;
 }
-#nav-bar ul{
+
+#nav-bar ul {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
-nav ul li{
+
+nav ul li {
     list-style: none;
 }
-#nav-bar ul li a{
+
+#nav-bar ul li a {
     color: black;
     text-decoration: none;
     font-weight: 500;
@@ -100,7 +113,7 @@ nav ul li{
     position: relative;
 }
 
-#nav-bar ul li a:after{
+#nav-bar ul li a:after {
     content: "";
     background-color: var(--violet-color);
     position: absolute;
@@ -111,45 +124,53 @@ nav ul li{
     opacity: 0;
     transition: 0.5s;
 }
-#nav-bar ul li a:hover:after{
+
+#nav-bar ul li a:hover:after {
     width: 100%;
     opacity: 1;
 }
 
-@media (max-width: 999px){
-    #header{
+@media (max-width: 999px) {
+    #header {
         display: flex;
         flex-direction: column;
         height: fit-content;
         padding: 1rem 0;
     }
-    #logoandtitle img{
+
+    #logoandtitle img {
         height: 4rem;
         margin-right: 0.5rem;
     }
-    #logoandtitle h2{
+
+    #logoandtitle h2 {
         font-size: 1rem;
     }
-    #logoandtitle h1{
+
+    #logoandtitle h1 {
         font-size: 0.8rem;
     }
-    #menu-button{
+
+    #menu-button {
         text-decoration: none;
         display: inline-block;
     }
-    #nav-bar{
+
+    #nav-bar {
         display: flex;
         flex-direction: column;
         align-items: end;
         margin-right: 1rem;
     }
-    #nav-bar ul{
+
+    #nav-bar ul {
         margin-top: 1rem;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
     }
-    #nav-bar ul.hidden{
+
+    #nav-bar ul.hidden {
         display: none;
     }
 
