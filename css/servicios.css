@@ -95,6 +95,14 @@ button {
 }
 
 /*Sub paginas*/
+.servicio-header-img {
+    margin: 0 -10rem 0 -10rem;
+    width: 100vw;
+    height: 18rem;
+    object-fit: cover;
+    object-position: center;
+}
+
 .servicio-detalle {
     margin-left: 1.5rem;
     display: flex;
@@ -161,4 +169,7 @@ button {
         display: none;
     }
 
+    .servicio-header-img {
+        height: 8rem;
+    }
 }
