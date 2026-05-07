@@ -6,13 +6,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $telefono = $_POST["telefono"];
     $mensaje = $_POST["mensaje"];
 
-    $empresa = "tucorreo@tu-dominio.com";  
+    $empresa = "contacto@estudiowilkoriski.com";  
     $asunto = "Nuevo mensaje desde formulario web";
     
     //Mail al estudio
     $cuerpo = "Nombre: $nombre\nCorreo: $email\nTelefono-celular: $telefono\nMensaje:\n $mensaje";
 
-    $headers = "From: $email";
+    $headers = "From: contacto@estudiowilkoriski.com\r\n";
+    $headers .= "Reply-To: $email\r\n";
     mail($empresa, $asunto, $cuerpo, $headers);
     
     //Mail respuesta automatica
