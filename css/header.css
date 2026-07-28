@@ -167,12 +167,32 @@ nav ul li {
         margin-top: 1rem;
         display: flex;
         flex-direction: column;
-        align-items: flex-end;
-        gap: 0.5rem;
-        background-color: white;
+        align-items: stretch;
+        gap: 0.7rem;
+        background: linear-gradient(145deg, #ffffff, #f7f2fa);
         padding: 1rem;
-        border-radius: 0.5rem;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        border-radius: 1rem;
+        box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+        min-width: min(80vw, 16rem);
+    }
+
+    #nav-bar ul li {
+        width: 100%;
+    }
+
+    #nav-bar ul li a {
+        display: block;
+        width: 100%;
+        color: #2f233d;
+        padding: 0.8rem 1rem;
+        border-radius: 0.8rem;
+        text-align: left;
+        transition: background-color 0.2s ease, transform 0.2s ease;
+    }
+
+    #nav-bar ul li a:hover {
+        background-color: #efe6f5;
+        transform: translateX(2px);
     }
 
     #nav-bar ul.hidden {
