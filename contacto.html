@@ -23,6 +23,8 @@
     <link rel="stylesheet" href="css/contacto.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="text/javascript" src="js/inicio.js" defer></script>
+    <!-- Google reCAPTCHA v2 Script -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
     <header class="hidden">  
@@ -68,6 +70,8 @@
                 <input type="text" name="email" id="email" placeholder="ejemplo@mail.com">
                 <label for="mensaje">Mensaje</label>
                 <textarea name="mensaje" id="mensaje" cols="30" rows="8"></textarea>
+                <!-- Google reCAPTCHA Widget -->
+                <div class="g-recaptcha" data-sitekey="6LfBqGotAAAAAIgDS-ty6CpmfyrqrMKoovE8gtuX" style="margin-top: 1.5rem;"></div>
                 <input type="submit" id="submit">
             </form>
             <section id="secondColumn">
@@ -100,5 +104,24 @@
             <a href=""><img src="images/Social/ig-logo-color.png" alt=""></a>
         </div>
     </footer>
+    <script>
+        // Mostrar mensajes de éxito o error de forma amigable
+        window.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.has('success')) {
+                alert('¡Tu mensaje ha sido enviado correctamente! Nos pondremos en contacto a la brevedad.');
+                // Limpiar la URL para evitar que se repita el alert al recargar
+                window.history.replaceState({}, document.title, window.location.pathname);
+            } else if (urlParams.has('error')) {
+                const error = urlParams.get('error');
+                if (error === 'captcha_empty') {
+                    alert('Por favor, completa la verificación "No soy un robot" antes de enviar.');
+                } else if (error === 'captcha_failed') {
+                    alert('La verificación de captcha falló. Por favor, inténtalo de nuevo.');
+                }
+                window.history.replaceState({}, document.title, window.location.pathname);
+            }
+        });
+    </script>
 </body>
 </html>
