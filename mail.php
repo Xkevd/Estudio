@@ -61,20 +61,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $telefono = $_POST["telefono"];
     $mensaje = $_POST["mensaje"];
 
-    $empresa = "estudiowilkoriski@gmail.com";  
+    $empresa = "contabilidad@estudiowilkoriski.uy";  
     $asunto = "Nuevo mensaje desde formulario web";
     
     //Mail al estudio
     $cuerpo = "Nombre: $nombre\nCorreo: $email\nTelefono-celular: $telefono\nMensaje:\n $mensaje";
 
-    $headers = "From: estudiowilkoriski@gmail.com\r\n";
+    $headers = "From: contabilidad@estudiowilkoriski.uy\r\n";
     $headers .= "Reply-To: $email\r\n";
     mail($empresa, $asunto, $cuerpo, $headers);
     
     //Mail respuesta automatica
     $asuntoConfirm = "Hemos recibido tu mensaje";
     $mensajeConfirm = "Hola $nombre,\n\nTu mensaje ha sido recibido correctamente.\nTe responderemos a la brevedad.\nWilkoriski, Ferrua y Asociados SRL";
-    $headers = "From: estudiowilkoriski@gmail.com";
+    $headers = "From: contabilidad@estudiowilkoriski.uy";
     mail($email, $asuntoConfirm, $mensajeConfirm, $headers);
 
     header("Location: contacto.html?success=1");

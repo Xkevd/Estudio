@@ -125,6 +125,7 @@ nav ul li {
     transition: 0.5s;
 }
 
+#nav-bar ul li a.active:after,
 #nav-bar ul li a:hover:after {
     width: 100%;
     opacity: 1;
@@ -193,6 +194,12 @@ nav ul li {
     #nav-bar ul li a:hover {
         background-color: #efe6f5;
         transform: translateX(2px);
+    }
+
+    #nav-bar ul li a.active {
+        background-color: #efe6f5;
+        font-weight: 600;
+        color: var(--violet-color);
     }
 
     #nav-bar ul.hidden {

@@ -56,3 +56,26 @@ function changeClass() {
 }
 
 menuButton.addEventListener('click', changeClass);
+
+// Highlight active page in navigation bar
+document.addEventListener("DOMContentLoaded", () => {
+    const path = window.location.pathname.replace(/\\/g, "/");
+    const page = path.split("/").pop();
+    const navLinks = document.querySelectorAll("#menu a");
+
+    navLinks.forEach(link => {
+        const href = link.getAttribute("href");
+        if (!href) return;
+        const linkPage = href.split("/").pop();
+        
+        if (page === linkPage) {
+            link.classList.add("active");
+        } else if ((page === "" || page === "index.html") && linkPage === "index.html") {
+            // Match home page correctly (including root path)
+            link.classList.add("active");
+        } else if (path.includes("/servicios/") && linkPage === "servicios.html") {
+            // Highlight SERVICIOS for sub-pages under the servicios sub-directory
+            link.classList.add("active");
+        }
+    });
+});
