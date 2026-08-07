@@ -105,14 +105,14 @@ form label {
     min-width: 350px;
 }
 
-#secondColumn div {
+#secondColumn > div {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     background-color: white;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     border-radius: 12px;
-    padding: 2.5rem 2rem;
+    padding: 1.5rem;
     width: 100%;
     box-sizing: border-box;
 }
@@ -128,37 +128,83 @@ form label {
 }
 
 
-#contactInfo {
+.contact-card-compact {
+    width: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    gap: 1.2rem;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.contact-title {
+    font-size: 1.3rem;
+    color: var(--violet-color);
+    margin: 0 0 0.5rem 0;
+    font-weight: 600;
+    display: flex;
     align-items: center;
-    width: fit-content;
-    gap: 0.5rem;
-    height: min-content;
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+    border-bottom: 2px solid #efe6f5;
+    padding-bottom: 0.5rem;
 }
 
-#contactInfo hr {
-    height: 3rem;
-    border: var(--grey-color) 1px solid;
+.contact-row {
+    width: 100%;
 }
 
-#contactInfo p {
+.contact-row p {
     margin: 0;
-}
-
-/*Phone*/
-#phoneInfo {
-    text-align: right;
-    font-size: 1.5rem;
-}
-
-#internos {
     font-size: 1rem;
+    color: #333;
+    line-height: 1.4;
 }
 
-#celulares {
-    font-size: 1.5rem;
-    margin-bottom: 0;
+.contact-row p strong {
+    color: #111;
+}
+
+.contact-row .small-text {
+    font-size: 0.85rem;
+    color: var(--grey-color);
+    margin-top: 0.2rem;
+}
+
+.emails-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.emails-list a {
+    color: var(--violet-color);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: color 0.2s ease;
+}
+
+.emails-list a:hover {
+    color: #7e6492;
+    text-decoration: underline;
+}
+
+.phone-link {
+    color: var(--violet-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.phone-link:hover {
+    color: #7e6492;
+    text-decoration: underline;
+}
+
+.ext-num {
+    color: var(--violet-color);
+    font-weight: 600;
 }
 
 em {
@@ -200,24 +246,20 @@ em {
         margin-bottom: 2rem;
     }
 
-    #phoneInfo {
-        font-size: 1rem;
+    .contact-card-compact {
+        align-items: center;
     }
-
-    #phoneIcon {
-        display: none;
+    
+    .contact-title {
+        justify-content: center;
     }
-
-    #internos {
-        font-size: 0.85rem;
+    
+    .contact-row {
+        text-align: center;
     }
-
-    #celulares {
-        font-size: 1rem;
-    }
-
-    #contactInfo hr {
-        height: 1.5rem;
+    
+    .emails-list {
+        align-items: center;
     }
 
 }
