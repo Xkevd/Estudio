@@ -26,11 +26,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         curl_setopt($ch, CURLOPT_POST, true);
         curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($data));
         curl_setopt($ch, CURLOPT_TIMEOUT, 10);
+        
+        // Desactivamos la verificación estricta de SSL para evitar errores comunes en hostings
+        // con certificados CA desactualizados o entornos locales (Error 60 de cURL)
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+        
         $response = curl_exec($ch);
         curl_close($ch);
     } 
-    // Fallback a file_get_contents si allow_url_fopen está activado
-    else if (ini_get('allow_url_fopen')) {
+    // Fallback a file_get_contents si cURL fallara por alguna razón y allow_url_fopen está activado
+    if ($response === false && ini_get('allow_url_fopen')) {
         $options = array(
             'http' => array(
                 'header'  => "Content-type: application/x-www-form-urlencoded\r\n",
@@ -56,6 +61,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit;
     }
 
+    // Datos del formulario
     $nombre = $_POST["nombre"];
     $email = $_POST["email"];
     $telefono = $_POST["telefono"];
@@ -64,14 +70,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $empresa = "contabilidad@estudiowilkoriski.uy";  
     $asunto = "Nuevo mensaje desde formulario web";
     
-    //Mail al estudio
+    // Mail al estudio
     $cuerpo = "Nombre: $nombre\nCorreo: $email\nTelefono-celular: $telefono\nMensaje:\n $mensaje";
 
     $headers = "From: contabilidad@estudiowilkoriski.uy\r\n";
     $headers .= "Reply-To: $email\r\n";
     mail($empresa, $asunto, $cuerpo, $headers);
     
-    //Mail respuesta automatica
+    // Mail respuesta automatica
     $asuntoConfirm = "Hemos recibido tu mensaje";
     $mensajeConfirm = "Hola $nombre,\n\nTu mensaje ha sido recibido correctamente.\nTe responderemos a la brevedad.\nWilkoriski, Ferrua y Asociados SRL";
     $headers = "From: contabilidad@estudiowilkoriski.uy";
