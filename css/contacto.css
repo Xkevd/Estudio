@@ -7,6 +7,11 @@ input::-webkit-inner-spin-button {
 
 #contactoh1 {
     margin-top: -1rem;
+    font-family: "Montserrat", sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #2b282c;
+    letter-spacing: -0.5px;
 }
 
 #contacto {
@@ -80,7 +85,7 @@ form label {
     align-self: flex-start;
     margin-top: 2rem;
     width: 100%;
-    background-color: #7e6492;
+    background-color: #2b282c;
     color: white;
     border: none;
     font-weight: 600;
